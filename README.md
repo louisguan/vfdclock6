@@ -1,7 +1,7 @@
 
 <h2>Software for driving a Vacuum Fluorescent Display with an Arduino</h2>
 
-<p>Written for a WeMos D1 Mini in mid, for its WiFi capabilities, see <a href="http://www.g7smy.co.uk/2018/09/rebuilding-the-vaccuum-florescent-display/">http://www.g7smy.co.uk/2018/09/rebuilding-the-vaccuum-florescent-display/</a> for details.</p>
+<p>Written for a WeMos D1 Mini in mind manly because its small and has for its WiFi capabilities, see <a href="http://www.g7smy.co.uk/2018/09/rebuilding-the-vaccuum-florescent-display/">http://www.g7smy.co.uk/2018/09/rebuilding-the-vaccuum-florescent-display/</a> for details of the hardware.</p>
 
 <p>The following libraries are used:</p>
 <ul>
