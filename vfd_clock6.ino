@@ -43,10 +43,9 @@ Adafruit_MCP23008 mcp0;
 #include <ESP8266WiFi.h>              // https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi
 #include <WiFiUdp.h>
 
-char ssid[] = "YOUR_WIFI_SSID";          // your network SSID (name)
-char pass[] = "YOUR_WIFI_PASSWORD";    // your network password
-unsigned int
-localPort = 2390;                     // local port to listen for UDP packets
+char ssid[] = "YOUR_WIFI_SSID";       // your network SSID (name)
+char pass[] = "YOUR_WIFI_PASSWORD";   // your network password
+unsigned int localPort = 2390;        // local port to listen for UDP packets
 IPAddress timeServerIP;               // time.nist.gov NTP server address
 const char* ntpServerName = "uk.pool.ntp.org";
 const int NTP_PACKET_SIZE = 48;       // NTP time stamp is in the first 48 bytes of the message
@@ -68,6 +67,7 @@ VFD vfd;
 DST dst;
 
 #include "vfd_display.h"
+#include "vfd_dst.h"
 #include "vfd_ntp.h"
 
 boolean colours[8][3] = { {1, 1, 1},  // off (black)
