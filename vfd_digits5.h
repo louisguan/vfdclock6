@@ -1,9 +1,9 @@
 
 // pin mapping for the MAX6502 to VFD display
-// the display pins are the array index - see shPins below - shPin1 (0) to shPin32 (31)
-// 0 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 09 08 07 06 05 04 03 02 01
-// x  0  1  2  3  4  5  6  7  8  9 10 11  0  1  2  3  4  5  6  7  8  9 10 11  0  1  2  3  4  5  6  7
-//  | chip 1                             | chip 2                           | chip 3
+//  |driver 3               |driver 2                           |driver 1
+// X| 1  0 11 10  9  8  7  6| 5  4  3  2  1  0 11 10  9  8  7  6| 5  4  3  2  1  0 11 10  9  8  7  6
+//  | 1  2  3  4  5  6  7  8  9 10 11 -- grids
+//                         elments -- 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32
 static const int VFDlookup[33] = {
    0,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
 };
@@ -81,13 +81,6 @@ static const char VFDdigits[36][17] = {
 
 static const char VFDgridBlank[12] = "00000000000";
 static const char VFDspace[17] = "0000000000000000";
-
-static const uint32_t shPins[33] = {
-  shPin1,  shPin2,  shPin3,  shPin4,  shPin5,  shPin6,  shPin7,  shPin8,
-  shPin9,  shPin10, shPin11, shPin12, shPin13, shPin14, shPin15, shPin16,
-  shPin17, shPin18, shPin19, shPin20, shPin21, shPin22, shPin23, shPin24,
-  shPin25, shPin26, shPin27, shPin28, shPin29, shPin30, shPin31, shPin32
-};
 
 struct ATIMERS {
 
